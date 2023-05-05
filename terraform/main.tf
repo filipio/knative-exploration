@@ -38,13 +38,17 @@ subnet_ids   = data.aws_subnets.labSubnets.ids
 instance_types = [var.node_group_instance_type]
 
 scaling_config {
-  desired_size = 2
+  desired_size = 4
   max_size   = 5
-  min_size   = 2
+  min_size   = 3
 }
 }
 
 resource "null_resource" "kubectl" {
+    triggers = {
+      node_group_arn = aws_eks_node_group.labNodeGroup.arn
+    }
+
     provisioner "local-exec" {
         command = "aws eks --region ${var.region} update-kubeconfig --name ${aws_eks_node_group.labNodeGroup.cluster_name}"
     }
