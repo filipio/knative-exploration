@@ -25,10 +25,13 @@ This project uses EKS created by terraform to setup knative in kubernetes cluste
 
 5. Follow instructions in [kubernetes/README.md](./kubernetes/README.md) to setup knative in EKS cluster and run hello-world app
 
-## Cleanup
+## Clean up
 
-1. Destory EKS cluster with knative resources (execute in `./terraform` directory)  
-   `terraform destroy`  
-   NOTE : you need to wait for completion
+1. Destory created knative resources. Follow instructions in [kubernetes/README.md](./kubernetes/README.md) (`Clean up` section)
 
-2. Destroy learner lab
+2. Destory EKS cluster and its resources. Follow instructions in [terraform/README.md](./terraform/README.md) (`Clean up` section)
+   You need to wait for completion
+
+3. Destroy learner lab
+
+NOTE: You need to follow point 1) before 2). Otherwise some resources may not be deleted properly (e.g. EC2 LoadBalancers)

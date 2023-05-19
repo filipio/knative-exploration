@@ -8,3 +8,8 @@
    `terraform apply -auto-approve`
 3. Check if `kubectl` has been successfully set up (this is done after node group has been created)  
    `kubectl get nodes`
+
+## Clean up
+
+1. Delete EKS cluster and related resources
+   `terraform destroy -auto-approve`
