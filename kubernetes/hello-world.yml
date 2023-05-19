@@ -6,9 +6,4 @@ spec:
   template:
     spec:
       containers:
-        - image: gcr.io/knative-samples/helloworld-go
-          ports:
-            - containerPort: 8080
-          env:
-            - name: TARGET
-              value: "World"
+        - image: docker.io/notnew77/hello-python

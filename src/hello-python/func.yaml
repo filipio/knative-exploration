@@ -1,0 +1,9 @@
+specVersion: 0.35.0
+name: hello-python
+runtime: python
+registry: notnew77
+image: notnew77/hello-python:latest
+created: 2023-05-07T12:26:33.8122364+02:00
+build:
+  builder: pack
+  pvcSize: 256Mi
