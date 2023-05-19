@@ -11,5 +11,5 @@
 
 ## Clean up
 
-1. Delete EKS cluster and related resources
+1. Delete EKS cluster and related resources  
    `terraform destroy -auto-approve`
