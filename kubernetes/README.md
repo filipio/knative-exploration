@@ -26,7 +26,7 @@ Setup is using knative-operator, based upon https://knative.dev/docs/install/ope
      Check the status of Knative Eventing Custom Resource
     `kubectl get KnativeEventing knative-eventing -n knative-eventing`
 
-5.  Modify `image` value in `hello-world.yml` if you want to use knative function created from scratch using instructions in `../src/hello-python/README.md`. Image pattern for dockerhub is  
+5.  Modify `image` value in `hello-world.yml` if you want to use knative function created from scratch using instructions in [../src/hello-python/README.md](../src/hello-python/README.md). Image pattern for dockerhub is  
     `docker.io/<dockerhub-username>/hello-python`
 
 6.  Create hello-world app function:  

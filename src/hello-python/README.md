@@ -32,4 +32,4 @@ Note that you need to install dependencies from `requirements.txt` to test funct
 python test_func.py
 ```
 
-After deploying function to kubernetes cluster [`README.md`](../../kubernetes/README.md)), you can check `test.http` file to see how to access endpoints.
+After deploying function to kubernetes cluster [`README.md`](../../kubernetes/README.md), you can check `test.http` file to see how to access endpoints.
