@@ -1,0 +1,14 @@
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: benchmark-pagerank
+spec:
+  broker: my-channel-broker # name of broker in channel-broker.yml
+  filter:
+    attributes:
+      type: graph-pagerank # needs to match with Ce-Type, see https://github.com/IBM/knative-quarkus-bench/tree/main/benchmarks
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: benchmark-pagerank # name of service in benchmark-{type}-svc.yml

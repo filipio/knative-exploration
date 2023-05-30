@@ -1,0 +1,9 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: benchmark-pagerank
+spec:
+  template:
+    spec:
+      containers:
+        - image: ghcr.io/ibm/knative-quarkus-bench/graph-pagerank:native

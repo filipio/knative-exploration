@@ -23,7 +23,9 @@ This project uses EKS created by terraform to setup knative in kubernetes cluste
 
 4. Follow instructions in [src/hello-python/README.md](./src/hello-python/README.md) to build and push knative function image to dockerhub repository
 
-5. Follow instructions in [kubernetes/README.md](./kubernetes/README.md) to setup knative in EKS cluster and run hello-world app
+5. Follow instructions in [kubernetes/README.md](./kubernetes/README.md) to setup knative in EKS cluster
+
+6. Follow instructions in [kubernetes/README.md](./kubernetes/README.md) to either execute request on hello-world knative function or run [sebs-pagerank](https://github.com/spcl/serverless-benchmarks/tree/master/benchmarks/500.scientific/501.graph-pagerank) benchmark using [quarkus](https://github.com/IBM/knative-quarkus-bench)
 
 ## Clean up
 
